@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VKCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VKCache</TokenIdentifier>
+			<Abstract type="html">Current class manages cached responses&apos; data. Cached data are saved in
+directory which was selected during initialization process.</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/initWithCacheDirectory:</TokenIdentifier>
+			<Abstract type="html">Initialization methods</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (instancetype)initWithCacheDirectory:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">directory where would be saved cached data. If there is no such
+directory then it&apos;s going to be created.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">instance of VKCache</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCacheDirectory:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/addCache:forURL:</TokenIdentifier>
+			<Abstract type="html">Current method adds new data to cached data directory</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCache:(NSData *)cache forURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cache</Name>
+					<Abstract type="html">data which should be cached</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL that corresponds to cached data</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCache:forURL:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/addCache:forURL:liveTime:</TokenIdentifier>
+			<Abstract type="html">Current method adds new data to cached data directory</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)addCache:(NSData *)cache forURL:(NSURL *)url liveTime:(VKCacheLiveTime)cacheLiveTime</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cache</Name>
+					<Abstract type="html">data which should be cached</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL that corresponds to cached data</Abstract>
+				</Parameter><Parameter>
+					<Name>cacheLiveTime</Name>
+					<Abstract type="html">life time of current cached data (possible values: VKCacheLiveTimeOneHour,
+VKCacheLiveTimeOneDay, VKCacheLiveTimeForever etc).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addCache:forURL:liveTime:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/removeCacheForURL:</TokenIdentifier>
+			<Abstract type="html">Removes cached data by its URL</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeCacheForURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL that corresponds to cached data which needs to be removed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeCacheForURL:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/clear</TokenIdentifier>
+			<Abstract type="html">Removes all cached data in a directory which were used for initialization.</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)clear</Declaration>
+			
+			
+			<Anchor>//api/name/clear</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/removeCacheDirectory</TokenIdentifier>
+			<Abstract type="html">Removes directory with all cached data.</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeCacheDirectory</Declaration>
+			
+			
+			<Anchor>//api/name/removeCacheDirectory</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/cacheForURL:</TokenIdentifier>
+			<Abstract type="html">Returns cached data by its URL, or nil, if life time of cached data has expired.</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)cacheForURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL that corresponds to cached data</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">instance of NSData class, cached data</Abstract></ReturnValue>
+			<Anchor>//api/name/cacheForURL:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKCache/cacheForURL:offlineMode:</TokenIdentifier>
+			<Abstract type="html">Returns cached data by its URL, or nil, if life time of cached data has
+expired or there is no data for current URL.</Abstract>
+			<DeclaredIn>VKCache.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)cacheForURL:(NSURL *)url offlineMode:(BOOL)offlineMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL that corresponds to cached data</Abstract>
+				</Parameter><Parameter>
+					<Name>offlineMode</Name>
+					<Abstract type="html">offline mode</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">instance of NSData class, cached data which corresponds to received URL</Abstract></ReturnValue>
+			<Anchor>//api/name/cacheForURL:offlineMode:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,35 @@
+//
+//  VKiller-Prefix.pch
+//  VKiller
+//
+//  Created by yury.mehov on 1/17/14.
+//  Copyright (c) 2014 yury.mehov. All rights reserved.
+//
+
+#ifndef VKiller_VKiller_Prefix_pch
+#define VKiller_VKiller_Prefix_pch
+
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "VKStringConst.h"
+#import "VkontakteSDK.h"
+#import "AppDelegate.h"
+#import "MusicManager.h"
+#import "IIViewDeckController.h"
+#endif
+
+
+#endif

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qmi-s6-2Nm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JJn-VE-ihX">
+            <objects>
+                <viewController id="qmi-s6-2Nm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0yS-SU-q7q"/>
+                        <viewControllerLayoutGuide type="bottom" id="d8E-yq-vVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nLC-Fp-zKY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-uF-PUo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZK-cp-oC0">
+                                <rect key="frame" x="16" y="260" width="288" height="48"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vk.png" translatesAutoresizingMaskIntoConstraints="NO" id="lHa-Tb-caJ">
+                                <rect key="frame" x="105" y="255" width="110" height="58"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dNf-uF-PUo" firstAttribute="top" secondItem="nLC-Fp-zKY" secondAttribute="top" id="24p-FP-euP"/>
+                            <constraint firstItem="lZK-cp-oC0" firstAttribute="leading" secondItem="nLC-Fp-zKY" secondAttribute="leadingMargin" id="5Qq-mJ-Y0S"/>
+                            <constraint firstItem="lZK-cp-oC0" firstAttribute="centerY" secondItem="dNf-uF-PUo" secondAttribute="centerY" id="PL4-pQ-RRg"/>
+                            <constraint firstAttribute="trailing" secondItem="dNf-uF-PUo" secondAttribute="trailing" id="bap-c0-nVj"/>
+                            <constraint firstItem="dNf-uF-PUo" firstAttribute="bottom" secondItem="d8E-yq-vVo" secondAttribute="top" id="dgt-eM-ayK"/>
+                            <constraint firstItem="lZK-cp-oC0" firstAttribute="centerX" secondItem="dNf-uF-PUo" secondAttribute="centerX" id="m54-Wm-Czu"/>
+                            <constraint firstItem="dNf-uF-PUo" firstAttribute="leading" secondItem="nLC-Fp-zKY" secondAttribute="leading" id="uoY-2f-brz"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIt-yg-FwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back1.jpg" width="796" height="1080"/>
+        <image name="vk.png" width="284" height="162"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
